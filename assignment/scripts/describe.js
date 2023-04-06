@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Created variable called name and stored Dane as string data.
+// Set conditional statment for name to console.log "Hi, Mary!" if and only if name is "Mary",
+// otherwise if name is anything else console.log "How do you do?".
+// We should expect to see "How do you do?" as "Dane" is not "Mary".
 
 //CODE
 /*
@@ -45,10 +45,16 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Created secret as an undefined variable so that it may accept a conditional value in the future.
+// Created variable called code and set its value to 123 as an iteger.
+// First conditional statement says: 
+// Assign the string value of 'super' to secret, then change the value of code by multiplying its current value by 2, if and only if (iff) code is equal to 123.  
+//    # this will run because code is exactly 123, which sets "super" as the value of secret and then multiplies code by 2 changing its
+//      value to 246. 
+// Second conditional statement says:
+// Assign the string value of 'duper' to secret if the value of code is greater than 250.
+//    # this will not run because the value of code is not greater than 250.
+// Lastly, the console.log will print the current value of secret which is 'super'.
 
 //CODE
 /*
@@ -70,10 +76,22 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Created vartiable called isStudent and set a boolean value of true.
+// Created variable called age and set its value to 34 as an integer.
+// Created variable called zip and set its value to REPRESENT! erm.. 55407 as an integer.
+// Conditional statement says:
+// First try,
+// console.log `You're a student on the West Coast!` iff the value of isStudent is true AND the value of zip is greater than 80000.
+//    # this will not run because the value of zip is 55407 which is less than 80000, both conditionals need to apply. 
+// Then try,
+// console.log 'What are your hobbies?' iff the value of isStudent is false OR if the value of age is less than 30. 
+//    # this willl not run because neither of the conditionals match/apply to the values of isStudent or age.
+// Then try,
+// console.log 'Welcome to Prime!' iff the value of isStudent is true.
+//    # we would expect to see this in the console as the value for isStudent is true.
+// If none of the others work try,
+// console.log 'How about the weather?'.
+//    # this will not run becasue one of the conditions was met.
 
 //CODE
 /*
@@ -135,6 +153,8 @@ let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+  // FIX - Only colorOne is being reassigned to purple, but the instructions say that both colorOne and colorTwo need to change to 'purple'.
+  // Possible solution - add colorTwo = 'purple'; on a new line above or below colorOne = 'purple';. 
   colorOne = 'purple';
 }
 */
@@ -147,6 +167,8 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+// FIX - if (temp > 39 || time >= 4) does not match the description above, || is OR not AND. 
+// Possible solution - replace || with &&.
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -159,6 +181,13 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
+// FIX - Conditional logic does not match the description -  minAge is being checked against age
+// Possible solution - change conditional statement to read as follows: 
+// if (age >= minAge){
+  console.log('Enter')
+} else {
+  console.log('No entry.')
+}
 
 if(minAge <= age) {
   console.log('no entry');
