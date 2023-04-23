@@ -148,14 +148,25 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
-let colorOne = 'red';
+let colorOne = 'red'; //ERR- Variables have misassigned values based on the description.
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
-  // FIX - Only colorOne is being reassigned to purple, but the instructions say that both colorOne and colorTwo need to change to 'purple'.
-  // Possible solution - add colorTwo = 'purple'; on a new line above or below colorOne = 'purple';. 
-  colorOne = 'purple';
+  colorOne = 'purple'; //ERR- Only colorOne is being reassigned to purple, but the instructions say that both colorOne and colorTwo need to change to 'purple'.
+}
+*/
+
+
+// FIX -
+/*
+let colorOne = 'blue'; //FIX- Changed value of colorOne to reflect the description.
+let colorTwo = 'red'; //FIX- Changed value of colorTwo to reflect the description.
+let mix = true;
+
+if (mix === true) {
+  colorOne = 'purple'; 
+  colorTwo = 'purple'; //FIX- Reassigned the value of colorTwo to purple in addition to colorOne as per the description. 
 }
 */
 
